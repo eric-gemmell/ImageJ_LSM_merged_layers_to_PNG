@@ -41,7 +41,7 @@ function Convert_Files_In_Directory(dir,output_dir) {
 function Iterate_Through_Each_Directory(dir){
 	directories = getFileList(dir);
 	print("Iterating Through Main Directories");
-    for (i=6; i<directories.length; i++) {
+    for (i=0; i<directories.length; i++) {
     	if (endsWith(directories[i], "/")){
     		print("Starting Main Directory, "+directories[i]);
     		File.makeDirectory(OUTPUT_DIR+directories[i]); 
